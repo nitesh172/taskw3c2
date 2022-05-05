@@ -15,7 +15,7 @@ const newToken = (user) => {
 
 const create = async (req, res) => {
   try {
-    const user = await Otp.findOne({
+    const user = await Otp.find({
       email: req.body.email,
     });
 
