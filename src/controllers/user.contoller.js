@@ -64,7 +64,7 @@ const verifyOtp = async (req, res) => {
   });
 
   if (otpHolder.length === 0)
-    return res.status(400).send("You use expire OTP!");
+    return res.status(400).send({message: "You use expire OTP!"});
 
   const rightOtpFind = otpHolder[otpHolder.length - 1];
 
@@ -105,7 +105,7 @@ const verifyOtp = async (req, res) => {
       });
     }
   } else {
-    return res.status(400).send("Your OTP was Wrong!");
+    return res.status(400).send({message: "Your OTP was Wrong!"});
   }
 };
 
