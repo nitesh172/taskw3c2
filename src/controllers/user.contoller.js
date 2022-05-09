@@ -3,8 +3,8 @@ const _ = require("lodash");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const otpGenerator = require("otp-generator");
-const emailCode = require("../configs/emailCode")
-const transporter = require("../configs/email")
+const emailCode = require("../configs/emailCode");
+const transporter = require("../configs/email");
 
 const User = require("../models/user.model");
 const Otp = require("../models/otp.model");
@@ -31,12 +31,12 @@ const create = async (req, res) => {
       to: req.body.email, // list of receivers
       subject: "OTP Login", // Subject line
       html: `${emailCode(OTP)}`, // plain text body
-    }
+    };
 
     transporter.sendMail(mailOptions, function (err, info) {
-      if (err) console.log(err)
-      else console.log(info)
-    })
+      if (err) console.log(err);
+      else console.log(info);
+    });
 
     const salt = await bcrypt.genSalt(10);
     let result;
@@ -64,7 +64,7 @@ const verifyOtp = async (req, res) => {
   });
 
   if (otpHolder.length === 0)
-    return res.status(400).send({message: "You use expire OTP!"});
+    return res.status(400).send({ message: "You use expire OTP!" });
 
   const rightOtpFind = otpHolder[otpHolder.length - 1];
 
@@ -105,7 +105,7 @@ const verifyOtp = async (req, res) => {
       });
     }
   } else {
-    return res.status(400).send({message: "Your OTP was Wrong!"});
+    return res.status(400).send({ message: "Your OTP was Wrong!" });
   }
 };
 

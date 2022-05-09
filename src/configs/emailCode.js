@@ -109,7 +109,7 @@ module.exports = (otp) =>{
                               <tbody>
                                 <tr>
                                   <td style="width:120px;">
-                                    <img height="auto" src="https://www.dropbox.com/s/kodrjik0yxjs2bd/alex_logo_white.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="120" />
+                                    <img height="auto" src="" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="120" />
                                   </td>
                                 </tr>
                               </tbody>
@@ -142,7 +142,7 @@ module.exports = (otp) =>{
                         </tr>
                         <tr>
                           <td align="center" style="font-size:0px;padding:10px 25px;padding-right:25px;padding-left:25px;word-break:break-word;">
-                            <div style="font-family:open Sans Helvetica, Arial, sans-serif;font-size:16px;line-height:1;text-align:center;color:#000000;">Please use the verification code below on the Alex app:</div>
+                            <div style="font-family:open Sans Helvetica, Arial, sans-serif;font-size:16px;line-height:1;text-align:center;color:#000000;">Please use the verification code below on the app:</div>
                           </td>
                         </tr>
                         <tr>
@@ -157,7 +157,7 @@ module.exports = (otp) =>{
                         </tr>
                         <tr>
                           <td align="center" style="font-size:0px;padding:10px 25px;padding-right:25px;padding-left:25px;word-break:break-word;">
-                            <div style="font-family:open Sans Helvetica, Arial, sans-serif;font-size:16px;line-height:1;text-align:center;color:#000000;">Thanks! <br />Alex team</div>
+                            <div style="font-family:open Sans Helvetica, Arial, sans-serif;font-size:16px;line-height:1;text-align:center;color:#000000;">Thanks! <br />Team</div>
                           </td>
                         </tr>
                       </tbody>
