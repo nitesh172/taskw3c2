@@ -19,7 +19,7 @@ const create = async (req, res) => {
       email: req.body.email,
     });
 
-    const OTP = otpGenerator.generate(4, {
+    const OTP = otpGenerator.generate(6, {
       digits: true,
       specialChars: false,
       lowerCaseAlphabets: false,
@@ -38,7 +38,7 @@ const create = async (req, res) => {
       else console.log(info);
     });
 
-    const salt = await bcrypt.genSalt(10);
+    const salt = await bcrypt.genSalt(16);
     let result;
     let otp;
 
